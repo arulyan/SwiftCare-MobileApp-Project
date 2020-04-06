@@ -1,0 +1,29 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      Common Problems
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding>
+  <div>
+    <h1 margin padding-top>Common Problems</h1>
+  </div>
+  <ion-searchbar [(ngModel)]="searchTerm" (ionChange)="setFilteredItems()">
+  </ion-searchbar>
+
+  <div id="lists" *ngFor="let item of items" tappable (click)="open(item.Name)">
+    <ion-avatar item-left>
+      <img src="{{item.Img}}" />
+    </ion-avatar>
+    <ion-card class="card-3">
+      <ion-card-content>
+        <h2>{{item.Name}}</h2>
+        <p>{{item.Descript}}</p>
+      </ion-card-content>
+    </ion-card>
+    <!--Descript works descript doesnt therefore the interpolation is case sensitive-->
+  </div>
+
+</ion-content>

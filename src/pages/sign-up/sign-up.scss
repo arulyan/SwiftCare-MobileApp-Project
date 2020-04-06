@@ -1,0 +1,83 @@
+page-sign-up {
+//     .page{
+//         background: linear-gradient(to bottom right,rgba(248, 248, 242, 0.952),rgba(229, 235, 228, 0.94))
+//     }
+//     .pp{
+//         color: red;
+//         background: linear-gradient(to bottom right,rgba(248, 248, 242, 0.952),rgba(229, 235, 228, 0.94))
+//     }
+//     .bg{
+//         color:#8a2be2;
+//         font-size: 1.25em;
+//     }
+//     .h1{
+//         text-align: center;
+//         font-size: 20px;
+//     }
+
+//  .kk{
+//     border-style: solid;
+//   border-width: medium;
+//   border-radius: 50px;
+//     margin-top: 20px;
+//  }
+
+//  .kc{
+//      border-style: solid;
+//     border-width: medium;
+//     border-radius: 50px;
+//     margin-top: 20px;
+//  }
+
+//  .kl{
+//     border-style: solid;
+//     border-width: medium;
+//     border-radius: 50px;
+//     margin-top: 20px;
+//  }
+//  .kt{
+//     border-style: solid;
+//     border-width: medium;
+//     border-radius: 50px;
+//     margin-top: 20px;
+//  }
+
+//  it all starts here
+ ion-content {
+    background-image: url('../../assets/imgs/stars.png');
+    background-position: 50% 50%;
+ }
+
+ ion-card {
+     margin-top: 17% !important;
+     border-radius: 20px !important;
+ }
+
+ ion-card-header {
+     font-family: varela;
+     font-size: 28px !important;
+     font-weight: bold;
+ }
+
+ .err {
+     color:red;
+ }
+
+ #b1,#b2,#b3 {
+     box-shadow: none !important;
+     border-radius: 5px !important;
+ }
+
+ #b1 {
+     text-align: center !important;
+     margin-top:2%;
+     margin-bottom:2%;
+     font-size: 14px;
+     padding:16px;
+ }
+
+ #b2 {
+     margin-bottom:5% !important;
+ }
+
+}

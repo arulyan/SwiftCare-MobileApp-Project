@@ -1,0 +1,47 @@
+<!--
+  Generated template for the BookedAppointmentsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+  <ion-navbar color="trans">
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <h1 margin padding-top>Upcoming</h1>
+  </div>
+
+  <ion-card class="card-3" *ngFor="let appoi of appointments">
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-3 id="dater">
+            <h2>{{appoi.day}}</h2>
+            <p>{{months[appoi.month]}}</p>
+          </ion-col>
+          <ion-col col-5>
+            <h2 id="docName"> {{appoi.docname}}</h2>
+          </ion-col>
+          <ion-col col-4>
+            <h2 id="time"> {{appoi.time}}</h2>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+
+  <!-- <ion-list *ngFor="let appoi of appointments">
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>{{appoi.day}}{{months[appoi.month]}} - {{appoi.docname}} at {{appoi.time}}</ion-label>
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger" (click)="cancelAppointment(appoi)">Cancel</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list> -->
+</ion-content>

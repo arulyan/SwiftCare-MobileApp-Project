@@ -1,0 +1,58 @@
+page-doc-home {
+
+    .card-background-page {
+
+        img {
+            width: 150% !important;
+            height: 100% !important;
+            filter: blur(3px);
+        }
+
+        ion-card {
+          position: relative;
+          text-align: center;
+          height: 36%;
+          border-radius: 10px;
+          // box-shadow: none !important;
+        }
+      
+        .card-title {
+          position: absolute;
+          top: 36%;
+          font-size: 2.5em;
+          width: 100%;
+          font-weight: bold;
+          color: black;
+        }
+      
+        .card-subtitle {
+          font-size: 1.3em;
+          position: absolute;
+          top: 52%;
+          width: 100%;
+          color: black;
+          font-weight: bold;
+        }
+      
+    }
+
+    // h1{
+    //   margin-left: 10px;
+    //   padding-bottom:15px;
+    // }
+
+    // .card-3 {
+    //   // box-shadow: none;
+    //   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23) !important;
+    // }
+
+    h1{
+      font-family:hind;
+      font-size:36px;
+      font-weight: bolder;
+      margin-left: 10px;
+      margin-bottom: 0;
+      padding-bottom:16px;
+  }
+
+}

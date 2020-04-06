@@ -1,0 +1,191 @@
+<!--
+  Generated template for the DocAppointmentsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+  <ion-navbar color="white">
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div id="padd">
+    <h1>See Your Appointments</h1>
+  </div>
+  <ion-scroll scrollX="true" style="width:100%; height: 80px">
+    <div class="inner">
+      <!-- <button *ngFor="let date of Dates; let i = index" ion-button
+        (click)="show(i,date.getMonth(),date.getDate());showSlots(i+1)">{{date.getDate()}}
+        {{months[date.getMonth()]}}</button> -->
+      <button *ngFor="let date of Dates; let i = index" ion-button color="light"
+        (click)="show(i,date.getMonth(),date.getDate());showSlots(i+1)" id="sloter"
+        [ngClass]="{'highlight':selectedIndex === i}">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <h4 no-margin>{{date.getDate()}}</h4>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <p no-margin>{{months[date.getMonth()]}}</p>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </button>
+    </div>
+  </ion-scroll>
+  <div [ngSwitch]="num" text-center>
+
+    <ion-list *ngSwitchCase="'0'">
+      <h2>Today</h2>
+      <ion-card class="card-3" *ngFor="let appoi of appointments;let i=index"
+        (click)="showUserDetails(appoi.email,appoi.time)">
+        <ion-card-content>
+          <ion-grid class="gridLock">
+            <ion-row class="gridRow">
+              <ion-col col-4 class="dater">
+                <h2 class="cardh">{{appoi.time}}</h2>
+              </ion-col>
+              <ion-col col-6>
+                <h2 class="cardh dater1">{{appoi.username}}</h2>
+              </ion-col>
+              <ion-col col-2 class="dater1">
+                <ion-icon name="clock"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+
+    <!-- For Tomorrow and so On........... -->
+    <ion-list *ngSwitchCase="'1'">
+      <h2>Tomorrow</h2>
+      <ion-card class="card-3" *ngFor="let appoi of appointments;let i=index"
+        (click)="showUserDetails(appoi.email,appoi.time)">
+        <ion-card-content>
+          <ion-grid class="gridLock">
+            <ion-row class="gridRow">
+              <ion-col col-4 class="dater">
+                <h2 class="cardh">{{appoi.time}}</h2>
+              </ion-col>
+              <ion-col col-6>
+                <h2 class="cardh dater1">{{appoi.username}}</h2>
+              </ion-col>
+              <ion-col col-2 class="dater1">
+                <ion-icon name="clock"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+    <!-- <ion-list *ngSwitchCase="'2'">
+      <h2>{{days[Dates[2].getDay()]}}</h2>
+      <ion-col *ngFor="let appoi of appointments; let i=index">
+        <button class="bton" ion-button ion-button (click)="showUserDetails(appoi.email,appoi.time)">
+          <p>{{appoi.time}}</p><br />
+        </button>
+      </ion-col>
+    </ion-list>
+    <ion-list *ngSwitchCase="'3'">
+      <h2>{{days[Dates[3].getDay()]}}</h2>
+      <ion-col *ngFor="let appoi of appointments; let i=index">
+        <button class="bton" ion-button ion-button (click)="showUserDetails(appoi.email,appoi.time)">
+          <p>{{appoi.time}}</p><br />
+        </button>
+      </ion-col>
+    </ion-list> -->
+
+
+    <!-- /////////Testing///////// -->
+    <ion-list *ngSwitchCase="'3'">
+      <h2 class="weekday">{{days[Dates[2].getDay()]}}</h2>
+      <ion-card class="card-3" *ngFor="let appoi of appointments;let i=index"
+        (click)="showUserDetails(appoi.email,appoi.time)">
+        <ion-card-content>
+          <ion-grid class="gridLock">
+            <ion-row class="gridRow">
+              <ion-col col-4 class="dater">
+                <h2 class="cardh">{{appoi.time}}</h2>
+              </ion-col>
+              <ion-col col-6>
+                <h2 class="cardh dater1">{{appoi.username}}</h2>
+              </ion-col>
+              <ion-col col-2 class="dater1">
+                <ion-icon name="clock"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+    <!-- /////////Testing Over//////// -->
+
+    <ion-list *ngSwitchCase="'4'">
+      <h2>{{days[Dates[4].getDay()]}}</h2>
+      <ion-card class="card-3" *ngFor="let appoi of appointments;let i=index"
+        (click)="showUserDetails(appoi.email,appoi.time)">
+        <ion-card-content>
+          <ion-grid class="gridLock">
+            <ion-row class="gridRow">
+              <ion-col col-4 class="dater">
+                <h2 class="cardh">{{appoi.time}}</h2>
+              </ion-col>
+              <ion-col col-6>
+                <h2 class="cardh dater1">{{appoi.username}}</h2>
+              </ion-col>
+              <ion-col col-2 class="dater1">
+                <ion-icon name="clock"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+    <ion-list *ngSwitchCase="'5'">
+      <h2>{{days[Dates[5].getDay()]}}</h2>
+      <ion-card class="card-3" *ngFor="let appoi of appointments;let i=index"
+        (click)="showUserDetails(appoi.email,appoi.time)">
+        <ion-card-content>
+          <ion-grid class="gridLock">
+            <ion-row class="gridRow">
+              <ion-col col-4 class="dater">
+                <h2 class="cardh">{{appoi.time}}</h2>
+              </ion-col>
+              <ion-col col-6>
+                <h2 class="cardh dater1">{{appoi.username}}</h2>
+              </ion-col>
+              <ion-col col-2 class="dater1">
+                <ion-icon name="clock"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+    <ion-list *ngSwitchCase="'6'">
+      <h2>{{days[Dates[6].getDay()]}}</h2>
+      <ion-card class="card-3" *ngFor="let appoi of appointments;let i=index"
+        (click)="showUserDetails(appoi.email,appoi.time)">
+        <ion-card-content>
+          <ion-grid class="gridLock">
+            <ion-row class="gridRow">
+              <ion-col col-4 class="dater">
+                <h2 class="cardh">{{appoi.time}}</h2>
+              </ion-col>
+              <ion-col col-6>
+                <h2 class="cardh dater1">{{appoi.username}}</h2>
+              </ion-col>
+              <ion-col col-2 class="dater1">
+                <ion-icon name="clock"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+  </div>
+</ion-content>

@@ -1,0 +1,34 @@
+[
+    {
+        "specialization":"Child Specialist",
+        "imgUrl":"assets/icons_img/0.png"
+    },
+    {
+        "specialization":"Ear Nose Throat",
+        "imgUrl":"assets/icons_img/1.png"
+    },
+    {
+        "specialization":"Dental care",
+        "imgUrl":"assets/icons_img/2.png"
+    },
+    {
+        "specialization":"Eye Specialist",
+        "imgUrl":"assets/icons_img/3.png"
+    },
+    {
+        "specialization":"Cardiologist",
+        "imgUrl":"assets/icons_img/4.png"
+    },
+    {
+        "specialization":"Skin Specialist",
+        "imgUrl":"assets/icons_img/5.png"
+    },
+    {
+        "specialization":"Orthopedist",
+        "imgUrl":"assets/icons_img/6.png"
+    },
+    {
+        "specialization":"General Physician",
+        "imgUrl":"assets/icons_img/7.png"
+    }
+]

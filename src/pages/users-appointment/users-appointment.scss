@@ -1,0 +1,53 @@
+page-users-appointment {
+    h1{
+        font-family:hind;
+        font-size:36px;
+        font-weight: bolder;
+        margin-top:0px !important;
+        margin-bottom:30px !important;
+    }
+    ion-content {
+        background-image: url('../../assets/imgs/starsbg.png');
+        background-position: 50% 50%;
+     }
+
+     .card-3 {
+        // box-shadow: none;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      }
+      
+      ion-card {
+          border-radius: 30px 0px 30px 0px !important;
+          margin-bottom:30px !important;
+          padding:0 !important;
+      }
+      ion-card-content {
+          padding: 0 !important;
+      }
+      ion-grid {
+          padding:0px !important;
+      }
+      ion-row {
+          padding: 0px !important;
+      }
+      ion-col {
+          padding: 24px !important;
+          padding-left: 30px !important;
+      }
+      #dater {
+        background: linear-gradient(to right, #5feff7 0%, #10f7eb 100%) !important;
+      }
+
+      h2 {
+          font-family: varela;
+          font-weight: bold !important;
+      }
+      p {
+          font-family: varela;
+          font-weight: bold !important;
+      }
+
+      ion-icon {
+          font-size: 2.2rem;
+      }
+}

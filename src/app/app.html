@@ -1,0 +1,21 @@
+<ion-menu [content]="content">
+    <ion-header style="z-index:1">
+        <ion-toolbar color="primary">
+        <ion-title color="light">Welcome {{name}}</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list style="margin-top:10px">
+            <button ion-item (click)="showBookedAppointments()" menuClose>
+                Upcoming Appointments
+            </button>
+            <button ion-item (click)="goToAppointments()" menuClose>
+                History
+            </button>
+            <button ion-item (click)="logOut()" menuClose>
+                Logout
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #content></ion-nav>

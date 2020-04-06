@@ -1,0 +1,30 @@
+<!--
+  Generated template for the AppointmentsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<!-- <ion-header no-border>
+  <ion-navbar color="white">
+      <ion-title>Specialization</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding height="400px">
+  <div>
+    <h1 margin padding-top>Appointments</h1>
+  </div>
+  <ion-searchbar [(ngModel)]="searchTerm" (ionChange)="setFilteredItems()">
+  </ion-searchbar>
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col col-6 *ngFor="let s of specials; let i=index">
+        <ion-card class="botShadow" text-center (click)="getDoctor(s.specialization)">
+          <img src="{{s.imgUrl}}">
+          <ion-card-title>{{s.specialization}}</ion-card-title>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

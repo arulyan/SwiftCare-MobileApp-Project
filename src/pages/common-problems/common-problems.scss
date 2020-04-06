@@ -1,0 +1,82 @@
+page-common-problems {
+    
+    ion-content{
+        // background: whitesmoke!important;
+    }
+
+    ion-avatar{
+        margin:0px;
+        position: absolute;
+        // transform: translateX(-7px);
+        transform: translate(-12px, 6px);
+    }
+
+    .item-inner{
+        border-style:none !important;
+    }
+
+    .searchbar-md .searchbar-input {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        color: black;
+        border-radius: 25px;
+        background:rgb(255, 255, 255) !important;
+    }
+
+    .list .item-avatar{
+        font-size:200px !important; /* as big size as you want */
+    }  
+    
+    ion-card-content{
+        padding:30px 13px 30px 71px !important;
+    }
+    img{
+        width:90px !important;
+        height: 90px !important;
+        // border-radius: 50px;
+    }
+    ion-card{
+        border-radius: 57px !important;
+        margin-left: 20px !important;
+        margin:25px !important;
+        // background:rgb(103, 233, 238)!important;
+        background: linear-gradient(to right, #8af1f7 0%, #36bcf1 100%) !important;
+    }
+
+    .card-3 {
+        // box-shadow: none;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      }
+
+    .card-4 {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      }
+
+    .card-5 {
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    }
+
+    h1{
+        font-family:hind;
+        font-size:36px;
+        font-weight: bolder;
+    }
+
+    h2{
+        font-size: large !important;
+        font-family:hind;
+        font-weight: bold !important;
+    }
+
+    // .toolbar-background{
+    //     background: #352F2D !important;
+    // }
+    .toolbar-title{
+        color:white;
+    }
+
+    #lists {
+        padding: 0 15px !important;
+    }
+
+    .scroll-content {}
+}

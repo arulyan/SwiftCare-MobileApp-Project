@@ -1,0 +1,42 @@
+<!--
+  Generated template for the UsersAppointmentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+  <ion-navbar color="trans">
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>
+    <h1 margin>History</h1>
+  </div>
+
+  <ion-card class="card-3" *ngFor="let history of histories" (click)="showDetails(history)">
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-3 id="dater">
+            <h2>{{history.day}}</h2>
+            <p>{{months[history.month]}}</p>
+          </ion-col>
+          <ion-col col-6>
+            <h2>{{history.docname}}</h2>
+            <h2>{{history.time}}</h2>
+          </ion-col>
+          <ion-col col-3>
+              <ion-icon ios="ios-checkmark-circle" md="md-checkmark-circle"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- <ion-list *ngFor="let history of histories" (click)="showDetails(history)">
+    <ion-item>
+      <ion-label>{{history.day}}{{months[history.month]}}</ion-label>
+    </ion-item>
+  </ion-list> -->
+</ion-content>

@@ -1,0 +1,100 @@
+page-doc-list {
+
+    .scroll-zoom-wrapper {
+        white-space: nowrap;
+    }
+
+    .scroll-content{
+        padding:25px !important;
+        padding-top:20px !important;
+    }
+
+    #container{
+        position: relative;
+        display: inline-block;
+        height: auto !important;
+        width: 70% !important;
+        margin-top:8px;
+        margin-bottom: 5px;
+        vertical-align: text-bottom;
+    }
+
+    .contentt{
+        font-size: 5vw !important;
+        color: white !important;
+        font-weight: 500;
+    }
+    .dot {
+        height: 35px;
+        width: 35px;
+        color: white;
+        background-color: #33ccff;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        padding-top: 8px;
+        position: absolute;
+        top:-5%;
+        right: 15%;
+        box-shadow: 0 8px 12px -8px rgb(49, 48, 48) !important;
+      }
+
+      h1{
+        font-family:hind;
+        font-size:36px;
+        font-weight: bolder;
+        }
+      h2{
+          font-family: hind;
+          font-weight: bold;
+          color: rgb(77, 76, 76);
+      }
+
+    img {
+        border-radius: 50%;
+    }
+
+    ion-avatar{
+        margin: 15px;
+        border-radius:50%;
+        height:9.5rem;
+        width:9.5rem;
+        border: 2px solid lightblue;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23) !important;
+        // box-shadow: 0 16px 12px -8px rgb(197, 196, 196) !important; 
+    }
+
+    ion-card {
+        height: 50vh !important;
+        // width: 70% !important; leave it all to the container block!
+        display: inline-block;
+        border-radius: 10px !important;
+        background-image: linear-gradient(-45deg, #33ccff, #f7f7f8) !important;
+    }
+
+    ion-card-content{
+        padding-top: 30% !important;
+    }
+
+    ion-card-title{
+        font-size: 8vw !important;
+        color: white !important;
+        font-weight: bold;
+    }
+
+    ion-scroll {
+        height: 60vh; 
+        //  height: auto;
+
+            .scroll-content {
+            padding: 0px !important;
+        }    
+    }
+
+    #padd{
+        padding-bottom: 10%;
+    }
+    // #pad{
+    //     padding-top: 60%;
+    // }
+}

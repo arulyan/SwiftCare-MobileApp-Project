@@ -1,0 +1,85 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+  <ion-navbar color="white">
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h1>User Login</h1>
+  <h2 id="he1">Hello there!</h2>
+  <h2 id="he2">Welcome Back</h2>
+  <br>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Email Address</ion-label>
+      <ion-input type="email" [(ngModel)]="email1" (ionChange)="checkFields()"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="pass1" (ionChange)="checkFields()"></ion-input>
+    </ion-item>
+  
+  </ion-list>
+
+  <br>
+
+  <button ion-button full large color="doc" [disabled]="dis" (click)="log()">Sign In</button>
+  <br>
+  <p>Don't have an account?</p>
+  <p style="color: rgb(7, 223, 252)" (click)="signin()">Register</p>
+  
+</ion-content>
+
+<!-- <ion-content padding class="bg">
+    <div class="h1">
+    <p>ENTER REGISTERED EMAIL</p>
+  </div>
+  
+  <form [formGroup] = "formgroup">
+      <ion-list class="hh">
+  
+          <ion-item class="kk">
+            <ion-label>Email</ion-label>
+            <ion-input type="Email" formControlName="mail" [(ngModel)]="email1"></ion-input>
+          </ion-item>
+          <ion-item *ngIf="mail.hasError('required') && mail.touched" class="pp">
+              <p class="pp"><b>Email Is Required</b></p>
+            </ion-item>
+            <ion-item *ngIf="mail.hasError('pattern') && mail.touched" class="pp">
+             <h6 class="pp"><b>Email is invalid</b></h6>
+              </ion-item>
+        
+          <ion-item class="kk">
+            <ion-label>Password</ion-label>
+            <ion-input type="password" formControlName="pass"[(ngModel)]="pass1"></ion-input>
+          </ion-item>
+          <ion-item *ngIf="pass.hasError('required') && pass.touched" class="pp">
+              <p class="pp"><b>Password Is Required</b></p>
+            </ion-item>
+            <ion-item *ngIf="formgroup.controls.pass.hasError('minlength') && formgroup.controls.pass.touched" class="pp">
+              <p class="pp"><b>Password Should not be less the 6</b></p>
+          </ion-item>
+          <ion-item *ngIf="formgroup.controls.pass.hasError('pattern') && formgroup.controls.pass.touched" class="pp">
+            <p class="pp"><b>Password Should Have Numbers and Alphabets only</b></p>
+        </ion-item>
+  
+  
+  
+          <div padding>
+          <button ion-button [disabled]="!formgroup.valid" (click)="log()" full color= "primary" round>Log In</button>
+          <button ion-button full color="primary" round type="Reset">RESET</button>
+          </div>
+          <button ion-button full round color="dark" (click)="signin()">SIGN UP</button>
+        </ion-list>
+   </form>
+  
+  </ion-content> -->

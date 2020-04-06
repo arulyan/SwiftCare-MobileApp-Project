@@ -1,0 +1,91 @@
+page-login {
+//     .bg{
+//         background: linear-gradient(to bottom right,rgba(248, 248, 242, 0.952),rgba(229, 235, 228, 0.94))
+//     }
+//       .hh{
+//           margin-top: 20px
+//       }
+//     .h1{
+//         text-align: center;
+//         font-size: 20px;
+//     }
+//     .pp{
+//         color: blue;
+//         background: linear-gradient(to bottom right,rgba(248, 248, 242, 0.952),rgba(229, 235, 228, 0.94))
+//     }
+
+//  .kk{
+//     border-style: solid;
+//   border-width: medium;
+//   border-radius: 30px;
+//     margin-top: 20px;
+//     border-color:black;
+//  }
+
+    .scroll-content {
+        padding:10% !important;
+    }
+
+    h1 {
+        font-family: hind;
+        font-weight: bold;
+        color: rgb(7, 223, 252);
+        font-size:35px;
+        margin-bottom:20%;
+    }
+
+    h2 {
+        // letter-spacing: 1px;
+        margin:0px;
+        font-family: varela;
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+    #he1 {
+        margin-bottom:3% !important;
+    }
+
+    #he2 {
+        margin-bottom:5% !important;
+    }
+
+    .back-button-icon {
+        color:rgb(7, 223, 252);
+    }
+
+    ion-item {
+        padding-left: 0px !important;
+    }
+
+    ion-label {
+        font-family: varela;
+    }
+
+
+    ion-input {
+        font-family: varela;
+    }
+
+    .item-input-has-focus .label-md[stacked],
+    .input-has-focus .label-md[stacked],
+    .item-input-has-focus .label-md[floating],
+    .input-has-focus .label-md[floating]
+    {
+    color: rgb(7, 223, 252) !important;
+    }
+
+    button {
+        text-transform: none !important;
+        box-shadow: none !important;
+        border-radius: 10px !important;
+    }
+
+    p {
+        font-family: varela;
+        font-weight: bold;
+        text-align: center;
+        color: grey;
+    }
+
+}

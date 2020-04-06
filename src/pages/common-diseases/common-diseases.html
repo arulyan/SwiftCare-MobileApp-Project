@@ -1,0 +1,22 @@
+<ion-header no-border>
+    <ion-navbar color="white">
+      <ion-title>Diseases</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let dis of diseases" class="card card-5">
+    <img src="{{dis.Image}}" />
+    <ion-card-content>
+      <ion-card-title>
+        {{dis.Name}}
+      </ion-card-title>
+      <p text-justify>
+        {{dis.Symptoms}}
+      </p>
+      <br>
+      <h2><b>Treatment</b></h2>
+      <p text-justify>{{dis.Treatment}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

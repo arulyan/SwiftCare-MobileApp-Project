@@ -1,0 +1,68 @@
+page-slot-booking {
+
+    h1{
+        font-family:hind;
+        font-size:36px;
+        font-weight: bolder;
+        margin-left: 10px;
+        margin-bottom: 0;
+        padding-bottom:16px;
+    }
+
+    h2{
+        padding-top:6px;
+        color: rgb(56, 56, 56);
+    }
+
+    h4{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    .highlight{
+        box-shadow: 0px 0px 0 rgba(0, 0, 0, 1), 0 0px 4px 0 #03ddfa !important;
+        // box-shadow: 0 5px 15px rgb(3, 221, 250) !important;
+        background: rgb(3, 221, 250) !important;    
+        color:white !important;
+        p{
+            color: white !important;
+        }
+    }
+    p{
+        font-size: 12px;
+        font-family: hind;
+        font-weight: bolder;
+        color: gray;
+    }
+
+    .inner{
+        width:600px;
+        height: 100%;
+    }
+
+    .scroll-content{
+        padding-top:0px !important;
+    }
+
+    #sloter{
+        height: 6.4rem !important;
+        width: 6.2rem;
+        padding:0 !important;
+        box-shadow: none;
+        margin: 0.4rem 0.8rem;
+        border-radius: 15px;
+    }
+    
+    .bton{
+        background:rgb(3, 221, 250);
+        // box-shadow:none !important;
+        border-radius: 6px;
+        font-size: 18px;
+        padding: 20px 14px;
+        // box-shadow: 0px 0px 0 rgba(0, 0, 0, 1), 0 0px 4px 0 #03ddfa !important;
+    }
+    // ion-scroll{
+    //     height: 10rem !important;
+    // }
+
+}

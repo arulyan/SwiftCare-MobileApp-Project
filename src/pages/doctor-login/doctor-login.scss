@@ -1,0 +1,72 @@
+page-doctor-login {
+    .scroll-content {
+        padding:10% !important;
+    }
+
+    h1 {
+        font-family: hind;
+        font-weight: bold;
+        color: rgb(7, 223, 252);
+        font-size:35px;
+        margin-bottom:10%;
+    }
+
+    h2 {
+        // letter-spacing: 1px;
+        margin:0px;
+        font-family: varela;
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+    #he1 {
+        margin-bottom:3% !important;
+    }
+
+    #he2 {
+        margin-bottom:5% !important;
+    }
+
+    .back-button-icon {
+        color:rgb(7, 223, 252);
+    }
+
+    ion-item {
+        padding-left: 0px !important;
+    }
+
+    ion-label {
+        font-family: varela;
+    }
+
+
+    ion-input {
+        font-family: varela;
+    }
+
+    .item-input-has-focus .label-md[stacked],
+    .input-has-focus .label-md[stacked],
+    .item-input-has-focus .label-md[floating],
+    .input-has-focus .label-md[floating]
+    {
+    color: rgb(7, 223, 252) !important;
+    }
+
+    button {
+        text-transform: none !important;
+        box-shadow: none !important;
+        border-radius: 10px !important;
+    }
+
+    p {
+        font-family: varela;
+        font-weight: bold;
+        text-align: center;
+        color: grey;
+    }
+
+    img {
+        padding: 0 28% 5% 28%;
+    }
+    
+}
