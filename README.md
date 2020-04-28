@@ -1,7 +1,5 @@
 # Documentation
 
-## About
-
 Time Doctor App for booking appointments with doctor online without physically wasting time standing in a queue
 
 Technologies used:
